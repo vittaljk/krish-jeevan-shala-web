@@ -1,0 +1,33 @@
+{
+  "name": "krish-jeevan-shala-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:static": "next build"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.6.3",
+    "formik": "^2.4.5",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-icons": "^4.11.0",
+    "sass": "^1.68.0",
+    "yup": "^1.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "eslint": "^8.0.0",
+    "eslint-config-wesbos": "3.2.3",
+    "postcss": "latest",
+    "prettier": "^2.7.1",
+    "tailwindcss": "latest",
+    "typescript": "^4.8.4"
+  }
+}

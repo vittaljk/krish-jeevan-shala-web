@@ -1,0 +1,32 @@
+@import 'ellipsis';
+
+@mixin card {
+    @apply cursor-pointer grid grid-rows-[auto_auto_1fr] p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-shadow duration-300 ease-in-out;
+    &:hover {
+        @apply shadow-lg;
+        img {
+            @apply scale-105;
+        }
+        .title {
+            @apply text-primary;
+        }
+    }
+    img {
+        @apply w-full h-56 object-cover rounded-lg transform transition-transform duration-300 ease-in-out;
+    }
+    .content, .cta {
+        @apply py-3 px-2;
+    }
+    .content {
+        .title {
+            @apply text-xl font-semibold transition-colors duration-300 ease-in-out;
+        }
+        .description {
+            @apply text-gray-500;
+            @include line-clamp(5);
+        }
+    } 
+    .cta {
+        @apply text-link underline text-right self-end pt-0 pb-3;
+    }
+}
