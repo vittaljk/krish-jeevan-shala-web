@@ -12,5 +12,5 @@ export default [
     link: '/clients-testimonials',
   },
   { id: 'faq', label: 'FAQ', link: '/faq' },
-  { id: 'contact-us', label: 'Contact Us', link: '/contact-us-us' },
+  { id: 'contact-us', label: 'Contact Us', link: '/contact-us' },
 ];

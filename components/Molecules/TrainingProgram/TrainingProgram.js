@@ -14,8 +14,8 @@ function TrainingProgram(props) {
           <h2 className="mb-4 text-3xl text-black font-bold">
             Course Contents:
           </h2>
-          {topic.contents.map
-            ? topic.contents.map((content) => (
+          {topic.content.map
+            ? topic.content.map((content) => (
                 <div key={content} className={styles.contentItem}>
                   <p className="text-2xl text-primary">
                     &#8594; &nbsp; &nbsp;
@@ -47,7 +47,7 @@ TrainingProgram.propTypes = {
     description: PropTypes.string.isRequired,
     overview: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    contents: PropTypes.arrayOf(PropTypes.string).isRequired,
+    content: PropTypes.arrayOf(PropTypes.string).isRequired,
     video: PropTypes.string.isRequired,
   }).isRequired,
 };
